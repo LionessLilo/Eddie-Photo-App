@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en-UK">
+    <meta charset="utf-8">
+    <Title>Eddie Photo App</Title>    
+</head>
+
+<body>
+    <main> <!--Helps identify different content areas. These elements make your HTML easier to read and help with Search Engine Optimization (SEO) and accessibility.-->
+        <h1>Photo App for Eddie</h1>
+        <section> <!--Section 1, introduction section-->
+            <h2> Eddie Photos</h2>
+            <p> See more <a target="_blank" href="https://photos.app.goo.gl/qBsUNudDFMY1npwD6"> photos of Eddie</a> in our Gallery</p> <!--target="_blank" makes the link open in a new tab-->
+            <a target="_blank" href="https://photos.app.goo.gl/qBsUNudDFMY1npwD6">
+                <img src="Eddie Photos/20180907_064248.jpg" alt="Eddie, our Scottish terrier, sitting with his bum on the couch and forelegs on a pillow while looking at the camera">
+            </a>
+        </section>
+
+        <section><!--Section 2, Eddie's likes and dislikes-->
+            <h2>Eddie Lists</h2>
+            <h3>Things Eddie loved:</h3> 
+            <ul>
+                <li>The bear blanket</li>
+                <li>Lying on people's feet</li>
+                <li>Lying on the floor with toe beans on full display</li>
+                <li>Rubbing his face and doing happy growls</li>
+                <li>Chasing ankles</li>
+                <li>Chasing cats</li>
+                <li>Car rides</li>
+                <li>Tennis balls</li>
+            </ul>
+            <figure>
+                <img src="./Eddie Photos/20210130_091039.jpg" alt="Eddie snuggled into a fluffy brown blanket with one eye looking at the camera">
+                <figcaption>Look at <em>that face</em>😍</figcaption>
+            </figure>
+            <h3>3 Things Eddie hated:</h3>
+            <ol>
+                <li>Blowing Raspberries</li>
+                <li>Swimming</li>
+                <li>Bunnies</li>
+            </ol>
+            <figure>
+                <img src="Eddie Photos/20211105_134823.jpg" alt="Eddie standing on the first step of the pool looking a bit sad">
+                <figcaption>He is <strong>not</strong> very impressed 😂</figcaption>
+            </figure>
+             
+        </section>
+
+        <section> <!--Section 3, Form-->
+            <h2>Request Form</h2>
+            <form action="/Request Form/"> <!--Need a backend to accept this-->
+                <fieldset>
+                    <legend>Do you think Eddie looked more happy or more sad most of the time?</legend> 
+                    <!--"Caption for the content in the fieldset element." The question you are asking / context for the answers in the section-->
+                    <label> 
+                    <!--This means that when you click text it also clicks the radial button-->
+                        <input type="radio" id="morehappy" name="happysad" value="morehappy" checked >More happy 
+                        <!--radio = the circle options where you can only select one option-->
+                        <!--Form will submit "name" and "value" attributes.-->
+                    </label>
+
+                    <label>
+                        <input type="radio" id="moresad" name="happysad" value="moresad">More sad 
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Which type of good boy was Eddie?</legend>
+                    <input type="checkbox" id="goodboy" name="goodboytype" value="goodboy" checked ><Label for="goodboy">Good boy</Label>
+                    <!--Checkbox allows more than one option in a multiple choice form-->
+                    <input type="checkbox" id="greatboy" name="goodboytype"><Label for="greatboy" value="greatboy">Great Boy</Label>
+                    <input type="checkbox" id="goodestboy" name="goodboytype"><Label for="goodestboy" value="goodestboy">Goodest Boy</Label>
+                    <input type="checkbox" id="greatestboy" name="goodboytype"><Label for="greatestboy" value="greatestboy">Greatest Boy</Label>
+                    <input type="checkbox" id="bestboy" name="goodboytype"><Label for="bestboy" value="bestboy">Best Boy</Label>
+                    <input type="checkbox" id="bestestboy" name="goodboytype"><Label for="bestestboy" value="bestestboy">Bestest Boy</Label>
+
+
+
+                </fieldset>
+
+                <input type="text"  placeholder="Eddie Photo URL" required > 
+                <!--Placeholder text gives people a hint about what kind of information to enter into an input. -->
+                <!--There's no need to set a value to the required attribute. Instead, just add the word required to the input element, making sure there is space between it and other attributes.-->
+                <button type="submit">Submit</button> 
+                <!--The default behavior of clicking a form button without any attributes submits the form to the location specified in the form's action attribute.-->
+                <!-- The type="submit" specifies what type of button it is -->
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></p>
+    </footer>
+</body>
+
+</html>
