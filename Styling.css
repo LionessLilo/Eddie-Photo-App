@@ -1,0 +1,50 @@
+h1 {
+  color: crimson;
+  font-family: lobster, sans-serif;
+}
+
+.green-text {
+  color: green;
+}
+
+p {
+  font-size: 16px;
+  font-family: monospace;
+}
+
+.main-eddie-image {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+
+.blue-border {
+  border-color: darkblue;
+  border-width: 10px;
+  border-style: double;
+}
+
+.green-border {
+  border-color: green;
+  border-style: solid;
+  border-left: 5px;
+  border-right: 5px;
+}
+
+.gainsboro-background-colour {
+  background-color: gainsboro;
+  width: 100%;
+}
+
+.support-photo {
+  width: 100%;
+}
+
+#photo-app-for-eddie {
+  background-color: green;
+}
+
+[type="checkbox"] {
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
